@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS States</title>
+    <style>
+      .box {
+        background-color: crimson;
+        font-size: 40px;
+      }
+      /*
+        hover: 마우스 커서가 머무름.
+        active: click
+        focus: 커서 깜박임
+      */
+      .box:hover {
+        background-color: blue;
+      }
+      .box:active {
+        background-color: yellow;
+      }
+      .box:focus {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea class="box">lalalalala</textarea>
+  </body>
+</html>

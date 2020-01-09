@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      /* display: flex => 부모 요소에 입력해야함( 가로가 default)
+         justify-content: value => 수평적용
+         align=items: value => 수직적용
+         ===================================================
+         flex-direction: column => flex를 수직 default로 바꾼다.
+         justify-content: value => 수직적용
+         align=items: value => 수평적용
+         ===================================================
+         flex-wrap: wrap; => flex박스 안의 width, height 요소의 설정을 보존한다.
+         - nowrap이 default => 창의 크기에 맞게 box의 width, height를 변형한다.
+       */
+      .father {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        height: 100%;
+        flex-wrap: warp;
+      }
+      .box {
+        background-color: crimson;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+    </div>
+  </body>
+</html>

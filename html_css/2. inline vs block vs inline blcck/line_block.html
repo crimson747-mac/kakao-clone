@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+  </head>
+  <style>
+    .box {
+      background-color: crimson;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: inline-block;
+      /* display: inline; => this is not a block anymore => become like a text(not a box)*/
+      /* display: inline-block => 인라인과 같은 설정값을 원하면서 동시에 박스형태를 유지하고 싶을 때*/
+    }
+  </style>
+  <body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+  </body>
+</html>

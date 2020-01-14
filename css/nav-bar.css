@@ -1,0 +1,21 @@
+.nav {
+  position: fixed; /*position: fixed 에는 width (또는 height)가 필요하다*/
+  width: 100%;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f7f7f7;
+  /* padding을 추가하지만 box사이즈는 영향을 받지 않게 한다. => 패딩으로 잃은만큼 보상을 해주지 않는다. */
+  box-sizing: border-box;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+  opacity: 0.7;
+}

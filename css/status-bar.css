@@ -1,0 +1,16 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+/* status-bar 안에 있닌 모든 아이콘을 의미한다. */
+.status-bar i {
+  font-size: 14px;
+}
+
+/* status-bar 안에 있는 status-bar__battery-level 클래스를 의미한다. */
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}

@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 * {
   box-sizing: border-box;
@@ -20,4 +21,7 @@ a {
   /* 부모요소로 부터 색을 받아온다는 의미:
     이 경우 부모요소에 검은색이 적용되있으므로 검은색이 적용된다. */
   color: inherit;
+
+  /* 링크에 걸린 밑줄을 제거해준다. */
+  text-decoration: none;
 }
